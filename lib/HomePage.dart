@@ -1,3 +1,6 @@
+import 'package:clone_uztelecomapp/Containers/first_container.dart';
+import 'package:clone_uztelecomapp/Containers/second_container.dart';
+import 'package:clone_uztelecomapp/Containers/third_container.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +15,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   @override
   Widget build(BuildContext context) {
 
@@ -28,70 +32,15 @@ class _HomePageState extends State<HomePage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(
-                          padding: EdgeInsets.all(17),
-                          width: double.infinity,
-                          height: 90,
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(33, 33, 33, 1.0),
-                              borderRadius: BorderRadius.all(Radius.circular(15))
-                          ),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("My Balance", style: TextStyle(color: Colors.white),),
-                                  Text("9510 so'm", style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),)
-                                ],
-                              ),
-                              ElevatedButton(onPressed: (){}, child: Text("To'ldirish", style: TextStyle(color: Color.fromRGBO(
-                                  0, 102, 255, 1.0)),), style: ElevatedButton.styleFrom(
-                                backgroundColor: Color.fromRGBO(
-                                    76, 113, 253, 0.4),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.all(Radius.circular(20))
-                                ),
-                              ),
-                              )
-                            ],
-                          ),
-                        ),
+                        firstContainer,
+                        SizedBox(height: 15,),
+                        secondContainer,
+                        SizedBox(height: 15,),
+                        thirdContainer,
                         SizedBox(height: 15,),
                         Container(
-                          width: double.infinity,
-                          height: 140,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                              color: Color.fromRGBO(33, 33, 33, 1.0),
-                          ),
-                          child: Column(
-                            children: [
-                              Row(
-
-                              ),
-                              Row(
-
-                              )
-                            ],
-                          ),
-
-                        ),
-                        SizedBox(height: 15,),
-                        Container(
-                          width: double.infinity,
-                          height: 350,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                            color: Color.fromRGBO(33, 33, 33, 1.0),
-                          ),
-                        ),
-                        SizedBox(height: 15,),
-                        Container(
-                          width: 100,
-                          height: 90,
+                          width: 140,
+                          height: 120,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(20)),
                             color: Color.fromRGBO(33, 33, 33, 1.0),
