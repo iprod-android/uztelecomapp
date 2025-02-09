@@ -48,3 +48,7 @@ final TextStyle usernameTxtStyle = TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.w200
 );
+final TextStyle fourthContainerTxtStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 15
+);

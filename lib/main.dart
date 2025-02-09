@@ -16,9 +16,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
@@ -28,7 +26,6 @@ class _MyAppState extends State<MyApp> {
           titleTextStyle: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w100),
           backgroundColor: Colors.black,
           elevation: 0,
-
         ),
         body: bottomNavBar()
       ),
