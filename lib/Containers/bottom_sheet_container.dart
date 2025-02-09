@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget ModalBottomSheet = Container(
-   height: 800,
+   height: 850,
    decoration: BoxDecoration(
      color: Color.fromRGBO(33, 33, 33, 1.0),
      borderRadius: BorderRadius.only(topRight: Radius.circular(15), topLeft: Radius.circular(15))
