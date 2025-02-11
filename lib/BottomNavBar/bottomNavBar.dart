@@ -24,6 +24,7 @@ class _bottomNavBarState extends State<bottomNavBar> {
     HomePage(),
     Center(child: Text("Celebrety"),),
     Center(child: Text("Hell"),),
+    Center(child: Text("Ещё"),)
   ];
   @override
   Widget build(BuildContext context) {
@@ -31,10 +32,12 @@ class _bottomNavBarState extends State<bottomNavBar> {
       body:
         _pages[_currentindex],
       bottomNavigationBar:       BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.celebration), label: "Hell"),
-        BottomNavigationBarItem(icon: Icon(Icons.camera_alt_outlined), label: "Camera"),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Главная"),
+        BottomNavigationBarItem(icon: Icon(Icons.monetization_on), label: "Финансы"),
+        BottomNavigationBarItem(icon: Icon(Icons.pages_rounded), label: "Каталог"),
+        BottomNavigationBarItem(icon: Icon(Icons.keyboard_control), label: "Ещё")
       ],
+          type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.black,
           selectedItemColor: Colors.blue,
           unselectedItemColor: Colors.grey,
@@ -47,7 +50,7 @@ class _bottomNavBarState extends State<bottomNavBar> {
             });
           }
 
-      ),
+      )
     );
   }
 }

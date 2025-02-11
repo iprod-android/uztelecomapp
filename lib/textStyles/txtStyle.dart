@@ -52,3 +52,8 @@ final TextStyle fourthContainerTxtStyle = TextStyle(
   color: Colors.white,
   fontSize: 15
 );
+final TextStyle bottomSheetTxtStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  color: Colors.grey.withOpacity(0.5),
+  fontSize: 20
+);

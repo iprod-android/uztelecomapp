@@ -45,13 +45,12 @@ class _HomePageState extends State<HomePage> {
                           thirdContainer,
                           SizedBox(height: 15,),
                           InkWell(
-
-                              borderRadius: BorderRadius.all(Radius.circular(20)),
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
                               onTap: (){
                                 showModalBottomSheet(context: context,
                                     isScrollControlled: true,
                                     builder: (context){
-                                  return ModalBottomSheet;
+                                  return bottomSheetContainer;
                                 });
                                
                               },
