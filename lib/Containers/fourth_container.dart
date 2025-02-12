@@ -14,7 +14,7 @@ Widget fourthContainer = Container(
     crossAxisAlignment: CrossAxisAlignment.start,
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
-      Icon(Icons.online_prediction_rounded, color: Colors.white,),
+      Icon(Icons.online_prediction_rounded, color: Colors.grey,),
       Text("Услуги", style: fourthContainerTxtStyle,),
     ],
   ),

@@ -1,4 +1,4 @@
-import 'package:clone_uztelecomapp/HomePage.dart';
+import 'package:clone_uztelecomapp/Pages/HomePage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

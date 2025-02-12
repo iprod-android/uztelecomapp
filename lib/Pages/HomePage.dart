@@ -40,7 +40,19 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           firstContainer,
                           SizedBox(height: 15,),
-                          secondContainer,
+                          InkWell(
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                              onTap: (){
+                                showModalBottomSheet(context: context,
+                                    isScrollControlled: true,
+                                    builder: (context){
+                                   return Container(
+                                     height: 850,
+                                     child: Center(child: Text("data"),),
+                                   );
+                                });
+                              },
+                              child: secondContainer),
                           SizedBox(height: 15,),
                           thirdContainer,
                           SizedBox(height: 15,),

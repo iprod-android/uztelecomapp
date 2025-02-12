@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 Widget bottomSheetContainer = DefaultTabController(
   length: 2,
    child: Container(
+
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
+         borderRadius: BorderRadius.only(topRight: Radius.circular(20), topLeft: Radius.circular(20)),
          color: Color.fromRGBO(33, 33, 33, 1.0),
       ),
       height: 850,
